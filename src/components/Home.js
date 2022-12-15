@@ -6,6 +6,11 @@ import Courseend from './Courseend';
 import News from './News';
 import Footer from './Footer';
 import Login from './Login';
+import Totop from './Totop';
+import { useState, useEffect } from 'react';
+
+
+
 
 const Home = ({Link}) => {
 

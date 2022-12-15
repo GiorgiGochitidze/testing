@@ -4,7 +4,7 @@ import "aos/dist/aos.css"
 import { useEffect } from "react";
 
 
-const Registration = () => {
+const Registration2 = () => {
 
     useEffect(() => {
         AOS.init({duration: 1000})
@@ -15,37 +15,37 @@ const Registration = () => {
             <div data-aos="fade-up" className="registers">
                 <div className="register-form">
 
-                    <h1 style={{textAlign: "center", color: "white"}}>რეგისტრაცია</h1>
+                    <h1 style={{textAlign: "center", color: "white"}}>Registration Form</h1>
 
                     <div className="names-container">
-                        <input className="name" type="text" title="სახელი" placeholder="სახელი"/>
+                        <input className="name" type="text" title="Name" placeholder="Name"/>
                     </div>
 
                     <div style={{color: "white"}} className="surname-container">
-                        <input className="surname" type="text" title="გვარი" placeholder="გვარი"/>
+                        <input className="surname" type="text" title="Last Name" placeholder="Last Name"/>
                     </div>
 
                     <div className="password-container">  
-                        <input className="passwords" title="პაროლი" type="password" placeholder="პაროლი"/>
+                        <input className="passwords" title="Password" type="password" placeholder="Password"/>
                     </div>
 
                     <div className="gender-container">
                         <div className="male">
-                            <label style={{color: "white"}}>კაცი</label>
+                            <label style={{color: "white"}}>Male</label>
                             <input type={"radio"}  name="shipping"/>
                         </div>
 
                         <div className="famale">
-                        <label style={{color: "white"}}>ქალი</label>
+                        <label style={{color: "white"}}>FaMale</label>
                         <input type="radio" name="shipping" />
                         </div>
                     </div>
 
 
                 <div className="others">
-                    <button style={{marginBottom: "5px"}} className="login-button">რეგისტრაცია</button>
-                    <p style={{marginTop: "0"}}>გაქვს უკვე აკაუნტი?</p>
-                    <Link style={{marginTop: "-30px", marginBottom: "-30px", textDecoration: "none", color: "white"}} to="/Login"><p className="registration-link">შესვლა</p></Link>
+                    <button style={{marginBottom: "5px"}} className="login-button">Register</button>
+                    <p style={{marginTop: "0"}}>Have An Account?</p>
+                    <Link style={{marginTop: "-30px", marginBottom: "-30px", textDecoration: "none", color: "white"}} to="/Login"><p className="registration-link">LogIn</p></Link>
                 </div>
 
                 </div>
@@ -62,4 +62,4 @@ const Registration = () => {
      );
 }
  
-export default Registration;
+export default Registration2;

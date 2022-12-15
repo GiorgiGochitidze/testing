@@ -6,7 +6,7 @@ import News1 from './News1';
 import Footer1 from './Footer1';
 import Content1 from './Content1';
 
-const Home = () => {
+const Home1 = () => {
 
     return (
         <div className='container1'>
@@ -26,4 +26,4 @@ const Home = () => {
      );
 }
  
-export default Home;
+export default Home1;

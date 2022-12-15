@@ -4,6 +4,7 @@ body{
     overflow-x: hidden;
     background-color: #eff5f7;
     height: auto;
+    transition: 2s all ease-in;
 }
 
 body::-webkit-scrollbar{
@@ -24,6 +25,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    z-index: 2;
 }
 
 /* header navigation bar style */
@@ -43,16 +46,6 @@ header nav{
 header nav:hover{
     animation-play-state: paused;
 }
-/* 
-@keyframes nav-bar{
-    0%{
-        transform: translateX(-98%);
-    }
-
-    100%{
-        transform: translateX(100%);
-    }
-} */
 
 header nav p{
     font-size: 100%;
@@ -85,7 +78,7 @@ header nav p:hover{
     width: 800px;
     height: 300px;
     display: flex;
-    margin-top: 75px;
+    margin-top: 145px;
     margin-bottom: 50px;
 }
 
@@ -307,8 +300,9 @@ header nav p:hover{
     display: flex;
     flex-direction: column;
     border-top-right-radius: 50px;
-    margin-top: 80px;
+    margin-top: 65px;
     overflow: hidden;
+    z-index: 2;
 }
 
 .nav-links1{
@@ -632,7 +626,7 @@ header nav p:hover{
     font-family: Bebas Neue;
     overflow: hidden;
     content-visibility: visible;
-    animation: none;
+    position: inherit;
 }
 
 .names-container{
@@ -644,7 +638,7 @@ header nav p:hover{
     overflow: hidden;
     margin: 0 auto;
     content-visibility: hidden;
-    animation: nameing 1s infinite alternate;
+    position: inherit;
 }
 
 .name{
@@ -669,7 +663,6 @@ header nav p:hover{
     border-radius: 10px;
     background-color: #5F5C5C;
     content-visibility: visible;
-    animation: none;
 }
 
 .surname-container{
@@ -681,7 +674,6 @@ header nav p:hover{
     overflow: hidden;
     margin: 0 auto;
     content-visibility: hidden;
-    animation: surname 1s infinite alternate 0.5s;
 }
 
 .surname{
@@ -706,7 +698,6 @@ header nav p:hover{
     border-radius: 10px;
     background-color: #5F5C5C;
     content-visibility: visible;
-    animation: none;
 }
 
 .password-container{
@@ -718,7 +709,6 @@ header nav p:hover{
     overflow: hidden;
     margin: 0 auto;
     content-visibility: hidden;
-    animation: pasword 1s infinite alternate 1s;
 }
 
 .passwords{
@@ -765,6 +755,45 @@ header nav p:hover{
 }
 
 /* login styles end */
+
+.totop-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid lawngreen;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgba(0, 255, 255, 0.5), rgba(124, 252, 0, 0.5));
+    font-size: 30px;
+    color: white;
+    transition: 500ms ease-in all;
+}
+
+.totop-button span{
+    margin-top: 10px;
+}
+
+.totop-button:hover{
+    background-color: lawngreen;
+    cursor: pointer;
+}
+
+
+.button-container{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 530px;
+    z-index: 3;
+    padding-inline: 10px;
+    align-items: center;
+}
 
 /* registration styles start */
 
@@ -830,26 +859,6 @@ header nav p:hover{
     height: auto;
 }
 
-@keyframes list1 {
-    0%{
-        transform: translateX(-100%);
-    }
-
-    100%{
-        transform: translateX(100%);
-    }
-}
-
-@keyframes list2 {
-    0%{
-        transform: translateX(100%);
-    }
-
-    100%{
-        transform: translateX(-100%);
-    }
-}
-
 .firstlist:hover{
     animation-play-state: paused;
 }
@@ -877,6 +886,26 @@ header nav p:hover{
     animation: list2 35s infinite ease-in;
 }
 
+@keyframes list1{
+    0%{
+        transform: translate(-98%);
+    }
+
+    100%{
+        transform: translate(100%);
+    }
+}
+
+@keyframes list2{
+    0%{
+        transform: translate(99%);
+    }
+
+    100%{
+        transform: translate(-100%);
+    }
+}
+
 .sourses-projects{
     width: 100%;
     height: auto;
@@ -895,6 +924,7 @@ header nav p:hover{
     margin-left: 15px;
     text-align: center;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .inside-project img{
@@ -1328,7 +1358,7 @@ footer{
 
 .lists{
     position: absolute;
-    top: 45px;
+    top: 60px;
     width: 165px;
     height: 70px;
     background-color: #e2e5e5;

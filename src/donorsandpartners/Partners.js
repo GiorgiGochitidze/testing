@@ -1,20 +1,31 @@
+import AOS from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from "react";
+
+
+
 const Partners = () => {
+
+    useEffect(() => {
+        AOS.init({duration: 1000})
+    })
+
     return ( 
         <div className="partners-container">
             <div className="donors-container">
-            <h1>ჩვენი პარტნიორები & დონორები</h1>
+            <h1 data-aos="fade-down">ჩვენი პარტნიორები & დონორები</h1>
             <div className="grids">
-                <div className="donors">
+                <div data-aos="fade-right" className="donors">
                     <img src="../img15.webp"/>
                     <p>გუგლი არის ჩვენი ერთ ერთი სპონსორი</p>
                 </div>
 
-                <div className="donors">
+                <div  data-aos="fade-left" className="donors">
                     <img src="../img15.webp"/>
                     <p>გუგლი არის ჩვენი ერთ ერთი სპონსორი</p>
                 </div>
 
-                <div className="donors">
+                <div data-aos="fade-right" className="donors">
                     <img src="../img15.webp"/>
                     <p>გუგლი არის ჩვენი ერთ ერთი სპონსორი</p>
                 </div>

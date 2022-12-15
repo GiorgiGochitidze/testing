@@ -1,7 +1,17 @@
+import AOS from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from "react";
+
+
 const Contactus2 = () => {
+
+    useEffect(() => {
+        AOS.init({duration: 1000})
+    })
+
     return ( 
         <div className="contact-us">
-            <div className="contact-content">
+            <div data-aos="fade-up" className="contact-content">
                 <h2 style={{textAlign: "center", wordBreak: "break-all"}}>Kontaktieren Sie uns hier:</h2>
                 <div className="contact-links">
                     <a href="https://mail.google.com/mail/u/0/#search/saorsageorgia%40gmail.com?compose=new" target="_blank"><img src="../gmail-icon.png" alt="gmail icon" /></a>

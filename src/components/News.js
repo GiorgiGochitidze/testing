@@ -1,15 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 
 const News = ({Link}) => {
     const [news, setNews] = useState(false)
 
+    useEffect(() => {
+        AOS.init({duration: 1000})
+    })
+
     return ( 
         
         <div className="news">
-            <h1 >გაეცანით სიახლეებს</h1>
+            <h1 data-aos="fade-down">გაეცანით სიახლეებს</h1>
             <div className="news-container">
-            <div className="news-content">
+            <div data-aos="fade-right" className="news-content">
                 <img src="./img9.jpg" />
 
                 <h3>მეწარმოებისა და <br /> ლიდერობის სკოლა</h3>
@@ -17,7 +23,7 @@ const News = ({Link}) => {
                 <button onClick={() => setNews(true)}>სრულად ნახვა →</button>
             </div>
 
-            <div  className="news-content">
+            <div data-aos="flip-right" className="news-content">
                 <img src="./img9.jpg" />
 
                 <h3>მეწარმოებისა და <br /> ლიდერობის სკოლა</h3>
@@ -25,7 +31,7 @@ const News = ({Link}) => {
                 <button onClick={() => setNews(true)}>სრულად ნახვა →</button>
             </div>
 
-            <div  className="news-content">
+            <div data-aos="fade-left" className="news-content">
                 <img src="./img9.jpg" />
 
                 <h3>მეწარმოებისა და <br /> ლიდერობის სკოლა</h3>
@@ -34,7 +40,7 @@ const News = ({Link}) => {
             </div>
             </div>
                 {news && 
-                <div className="news-window">
+                <div data-aos="fade-up" className="news-window">
                     <div className="news-window-content">
                         <h3 style={{textAlign: "center"}}>მეწარმოებისა და ლიდერობის სკოლა</h3>
                         <h4 style={{textAlign: "center"}}>მიმდინარეობს ტექნიკური სამუშაოები...</h4>

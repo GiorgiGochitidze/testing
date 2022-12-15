@@ -1,14 +1,20 @@
-
+import AOS from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 
 
 const Courseend = () => {
 
+    useEffect(() => {
+        AOS.init({duration: 1000})
+    })
+
     return ( 
         <div className="projects">
-            <h1>საორსას კურსდამთავრებული</h1>
+            <h1 data-aos="fade-down">საორსას კურსდამთავრებული</h1>
 
             <div className="sourses-projects">
-                <div className="inside-projects">
+                <div data-aos="fade-right" className="inside-projects">
                     <img src="./img3.jpg" />
                     <div>
                     <p style={{marginLeft: '20px'}}>რამე ტექსტი. ალბათ მონაწილის მოკლე<br /> 
@@ -17,7 +23,7 @@ const Courseend = () => {
                     </div>
                 </div>
 
-                <div className="inside-projects">
+                <div data-aos="fade-left" className="inside-projects">
                     <img src="./img4.jpg" />
                     <div>
                     <p style={{marginLeft: '20px'}}>რამე ტექსტი. ალბათ მონაწილის მოკლე<br />
@@ -26,7 +32,7 @@ const Courseend = () => {
                     </div>
                 </div>
 
-                <div className="inside-projects">
+                <div data-aos="fade-right" className="inside-projects">
                     <img src="./img5.jpg" />
                     <div>
                     <p style={{marginLeft: '20px'}}>რამე ტექსტი. ალბათ მონაწილის მოკლე<br />
@@ -36,7 +42,7 @@ const Courseend = () => {
                     </div>
                 </div>
 
-                <div className="inside-projects">
+                <div data-aos="fade-left" className="inside-projects">
                     <img src="./img6.jpg" />
                     <div>
                     <p style={{marginLeft: '20px'}}>რამე ტექსტი. ალბათ მონაწილის მოკლე<br /> სიტყვა პროექტის შესახებ.
@@ -45,7 +51,7 @@ const Courseend = () => {
                     </div>
                 </div>
 
-                <div className="inside-projects">
+                <div data-aos="fade-right" className="inside-projects">
                     <img src="./img7.jpg" />
                     <div>
                     <p style={{marginLeft: '20px'}}>რამე ტექსტი. ალბათ მონაწილის მოკლე<br /> სიტყვა პროექტის შესახებ. რამდენად<br />
@@ -54,7 +60,7 @@ const Courseend = () => {
                     </div>
                 </div>
 
-                <div className="inside-projects">
+                <div data-aos="fade-left" className="inside-projects">
                     <img src="./img8.jpg" />
                     <div>
                     <p style={{marginLeft: '20px'}}>რამე ტექსტი. ალბათ მონაწილის მოკლე<br /> სიტყვა პროექტის შესახებ. რამდენად<br />
