@@ -42,7 +42,7 @@ function App() {
     <Navbar />
 
     <Routes>
-      <Route path='/' element={<Home />} />
+      <Route path='/' element={<Home Link={Link} />} />
       <Route path='/News' element={<NewStories />} />
       <Route path='/Partners' element={<Partners />} />
       <Route path='/Library' element={<Biblary />} />
@@ -51,7 +51,7 @@ function App() {
       <Route path='/Aboutus' element={<Aboutus />} />
       <Route path='/Login' element={<Login Link={Link} />} />
       <Route path='/Register' element={<Registration />} />
-      <Route path='/Procces' element={<Procces />} />
+      <Route path='/Proces' element={<Procces />} />
 
       {/* english version */}
       <Route path='/HomeEnglish' element={<Home1 />} />
@@ -62,7 +62,7 @@ function App() {
       <Route path='/Aboutusen' element={<Aboutus1 />} />
       <Route path='/Loginen' element={<Login1 />} />
       <Route path='/Registeren' element={<Registration1 />} />
-      <Route path='/Proccesen' element={<Procces1 />} />
+      <Route path='/Procesen' element={<Procces1 />} />
 
       {/* german version */}
       <Route path='/HomeGerman' element={<Home2 />} />
@@ -73,7 +73,7 @@ function App() {
       <Route path='/Aboutusgr' element={<Aboutus2 />} />
       <Route path='/Logingr' element={<Login2 />} />
       <Route path='/Registergr' element={<Registration2 />} />
-      <Route path='/Proccesgr' element={<Procces2 />} />
+      <Route path='/Procesgr' element={<Procces2 />} />
 
     </Routes>
     </div>
