@@ -101,8 +101,8 @@ const Menu = ({Link, german, english, lists, setLists, setListsen, setListsgr, l
         </div>}
 
         {gr && <div data-aos="fade-up" className="menu-container">
-             <Link to="/HomeEnglish" style={{textDecoration: 'none', color: 'black'}}><p className="nav-links1">hauptsächlich</p></Link>
-             <Link to='/NewsEn' style={{textDecoration: 'none', color: 'black'}}><p className="nav-links2">Nachrichten</p></Link>
+             <Link to="/HomeGerman" style={{textDecoration: 'none', color: 'black'}}><p className="nav-links1">hauptsächlich</p></Link>
+             <Link to='/Newsgr' style={{textDecoration: 'none', color: 'black'}}><p className="nav-links2">Nachrichten</p></Link>
              <div classNam="servise-containeres" style={{cursor: "pointer"}} onMouseEnter={() => listis ? setListis(false) : setListis(true)} onMouseLeave={() => setListis(false)}>
 
                 <p className="menu-lististvis">Servise</p>
