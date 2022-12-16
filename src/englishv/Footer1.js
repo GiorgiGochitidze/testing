@@ -25,7 +25,7 @@ const Footer1 = () => {
                     <p><img className="icons" src="pdf-icon.png" />+ 01 234 567 89</p>
                 </div>
             </div>
-            <div className="developed">Developed by: Giorgi Gochitidze</div>
+            <a href="https://giorgig.netlify.app/" target="_blank" style={{textDecoration: 'none'}}><div className="developed">Developed by: Giorgi Gochitidze</div></a>
         </footer>
      );
 }
