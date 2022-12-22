@@ -1,7 +1,5 @@
 import "../Home.css"
-import Home1 from '../englishv/Home1'
 import { useState, useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css"
 
 const Menu = ({Link, german, english, lists, setLists, setListsen, setListsgr, listsen, listsgr, georgia, en , ge ,gr}) => {
@@ -40,12 +38,12 @@ const Menu = ({Link, german, english, lists, setLists, setListsen, setListsgr, l
               <div style={{marginTop: '-4px'}} className='listes'>
                 <div className='usa' onClick={english}>
                   <img src='../usa-icon.png' />
-                  <p style={{marginTop: '5px', marginLeft: '5px'}}><Link style={{textDecoration: 'none', color: 'black'}} to='/HomeEnglish'  >ინგლისური</Link></p>
+                  <Link style={{textDecoration: 'none', color: 'black'}} to='/HomeEnglish'><p style={{marginTop: '5px', marginLeft: '5px'}}>ინგლისური</p></Link>
                 </div>
 
                 <div className='usa' onClick={german}>
                   <img src='../german-icon.png' />
-                  <p style={{marginTop: '5px', marginLeft: '5px'}}><Link style={{textDecoration: 'none', color: 'black'}} to="/HomeGerman">გერმანული</Link></p>
+                  <Link style={{textDecoration: 'none', color: 'black'}} to="/HomeGerman"><p style={{marginTop: '5px', marginLeft: '5px'}}>გერმანული</p></Link>
                 </div>
 
               {/* languages list end */}
@@ -58,7 +56,7 @@ const Menu = ({Link, german, english, lists, setLists, setListsen, setListsgr, l
             <div data-aos="fade-up" className="menu-container">
              <Link to="/HomeEnglish" style={{textDecoration: 'none', color: 'black'}}><p className="nav-links1">Main</p></Link>
              <Link to='/NewsEn' style={{textDecoration: 'none', color: 'black'}}><p className="nav-links2">News</p></Link>
-             <div classNam="servise-containeres" style={{cursor: "pointer"}} onMouseEnter={() => listis ? setListis(false) : setListis(true)} onMouseLeave={() => setListis(false)}>
+             <div className="servise-containeres" style={{cursor: "pointer"}} onMouseEnter={() => listis ? setListis(false) : setListis(true)} onMouseLeave={() => setListis(false)}>
 
                 <p className="menu-lististvis">Service</p>
                   
@@ -85,12 +83,12 @@ const Menu = ({Link, german, english, lists, setLists, setListsen, setListsgr, l
               <div style={{marginTop: '-4px'}} className='listes'>
                 <div className='usa' onClick={georgia}>
                   <img src='../georgia-icon.png' />
-                  <p style={{marginTop: '5px', marginLeft: '5px'}}><Link style={{textDecoration: 'none', color: 'black'}} to='/'>Georgian</Link></p>
+                  <Link style={{textDecoration: 'none', color: 'black'}} to='/'><p style={{marginTop: '5px', marginLeft: '5px'}}>Georgian</p></Link>
                 </div>
 
                 <div className='usa' onClick={german}>
                   <img src='../german-icon.png' />
-                  <p style={{marginTop: '5px', marginLeft: '5px'}}><Link style={{textDecoration: 'none', color: 'black'}} to="/HomeGerman">German</Link></p>
+                  <Link style={{textDecoration: 'none', color: 'black'}} to="/HomeGerman"><p style={{marginTop: '5px', marginLeft: '5px'}}>German</p></Link>
                 </div>
 
               {/* languages list end */}

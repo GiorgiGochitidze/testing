@@ -34,7 +34,7 @@ const Login1 = () => {
             <div className="others">
                 <button style={{marginBottom: "5px"}} className="login-button">LogIn</button>
                 <p style={{marginTop: "0"}}>Dont Have Account?</p>
-                <Link style={{marginTop: "-30px", marginBottom: "-30px", textDecoration: "none", color: "white"}} to="/Register"><p className="registration-link">Register</p></Link>
+                <Link style={{marginTop: "-30px", marginBottom: "-30px", textDecoration: "none", color: "white"}} to="/Registeren"><p className="registration-link">Register</p></Link>
             </div>
 
             </div>

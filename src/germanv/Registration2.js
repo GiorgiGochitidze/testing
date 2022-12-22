@@ -45,7 +45,7 @@ const Registration2 = () => {
                 <div className="others">
                     <button style={{marginBottom: "5px"}} className="login-button">Register</button>
                     <p style={{marginTop: "0"}}>Have An Account?</p>
-                    <Link style={{marginTop: "-30px", marginBottom: "-30px", textDecoration: "none", color: "white"}} to="/Login"><p className="registration-link">LogIn</p></Link>
+                    <Link style={{marginTop: "-30px", marginBottom: "-30px", textDecoration: "none", color: "white"}} to="/Logingr"><p className="registration-link">LogIn</p></Link>
                 </div>
 
                 </div>

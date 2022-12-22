@@ -4,7 +4,6 @@ body{
     overflow-x: hidden;
     background-color: #eff5f7;
     height: auto;
-    transition: 2s all ease-in;
 }
 
 body::-webkit-scrollbar{
@@ -27,6 +26,7 @@ header{
     align-items: center;
     position: fixed;
     z-index: 2;
+    box-sizing: border-box;
 }
 
 /* header navigation bar style */
@@ -38,13 +38,7 @@ header nav{
     align-items: center;
     justify-content: space-around;
     font-size: 1rem;
-    animation: nav-bar 20s ease-in;
-    animation-iteration-count: infinite;
     background-color: white;
-}
-
-header nav:hover{
-    animation-play-state: paused;
 }
 
 header nav p{
@@ -1623,6 +1617,7 @@ footer{
 
 .App{
     background-color: #e2e5e5;
+    overflow-x: hidden;
 }
 
 .images-containers{

@@ -33,7 +33,7 @@ const Login = ({Link}) => {
                 <div className="others">
                     <button style={{marginBottom: "5px"}} className="login-button">შესვლა</button>
                     <p style={{marginTop: "0"}}>არ გაქვს აკაუნტი?</p>
-                    <Link style={{marginTop: "-30px", marginBottom: "-30px", textDecoration: "none", color: "white"}} to="/Proces"><p className="registration-link">რეგისტრაცია</p></Link>
+                    <Link style={{marginTop: "-30px", marginBottom: "-30px", textDecoration: "none", color: "white"}} to="/Register"><p className="registration-link">რეგისტრაცია</p></Link>
                 </div>
 
                 </div>
