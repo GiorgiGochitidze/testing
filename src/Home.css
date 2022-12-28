@@ -2,17 +2,20 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #eff5f7;
+    background: #eff5f7;
     height: auto;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar{
     border-radius: 20px;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar-thumb{
     background-color: lightgray;
     border-radius: 20px;
+    scroll-behavior: smooth;
 }
 
 /* header styles */
@@ -76,198 +79,6 @@ header nav p:hover{
     margin-bottom: 50px;
 }
 
-/* texts container */
-.list1{
-    width: 100%;
-    height: 500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-}
-
-/* first text container */
-.first{
-    width: 195px;
-    height: 200px;
-    background-color: #C183FB;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    transition: 0.1s;
-}
-
-.first:hover{
-    cursor: pointer;
-}
-
-/* second text container */
-.second{
-    width: 195px;
-    height: 200px;
-    background-color: #15803C;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    transition: 0.1s;
-}
-
-.second:hover{
-    transition-delay: 0.2s;
-    cursor: pointer;
-}
-
-/* third text container */
-.third{
-    width: 195px;
-    height: 200px;
-    background-color: #F67270;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    transition: 0.1s;
-}
-
-.third:hover{
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-/* fourth text container */
-.fourth{
-    width: 195px;
-    height: 200px;
-    background-color: #63A3F2;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-}
-
-.fourth:hover{
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-/* fifth text container */
-.fifth{
-    width: 195px;
-    height: 200px;
-    background-color: #1B4FD7;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-}
-
-.fifth:hover{
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-/* sicth text container */
-.sixth{
-    width: 195px;
-    height: 200px;
-    background-color: #4ADE80;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-}
-
-.sixth:hover{
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-/* seventh text container */
-.seventh{
-    width: 195px;
-    height: 200px;
-    background-color: #F9933E;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-}
-
-.seventh:hover{
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-/* eighth text container */
-.eighth{
-    width: 195px;
-    height: 200px;
-    background-color: #BA1B1C;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-}
-
-.eighth:hover{
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-/* nineth text container */
-.nineth{
-    width: 195px;
-    height: 200px;
-    background-color: #C085FC;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-}
-
-.nineth:hover{
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-/* tenth text container */
-
-.tenth{
-    width: 195px;
-    height: 200px;
-    background-color: #4CDD81;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-}
-
-.tenth:hover{
-    transition: 0.2s;
-    cursor: pointer;
-}
 
 /* menu-container styles */
 .menu-btn{
@@ -802,7 +613,7 @@ header nav p:hover{
 
 .registers{
     width: 430px;
-    height: 455px;
+    height: 470px;
     overflow: hidden;
     background-color: #bbb8b8;
     border-radius: 10px;
@@ -1129,7 +940,7 @@ footer{
 
 .servise-lists{
     width: 150px;
-    height: 100px;
+    height: auto;
     position: absolute;
     background-color: #e2e5e5;
     display: flex;
@@ -1139,6 +950,7 @@ footer{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    border: 1px solid #d5dada;
     overflow: hidden;
 }
 
@@ -1154,6 +966,7 @@ footer{
     color: black;
     animation: lists linear 0.2s;
     text-decoration: dashed;
+    border-bottom: 1px solid #d5dada;
 }
 
 .servise-containeres{
@@ -1701,6 +1514,184 @@ footer{
     gap: 10px;
 }
 
+.assistant-container{
+    width: 100%;
+    height: 0;
+    background-color: red;
+    position: fixed;
+    z-index: 3;
+    margin-top: 490px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-to-assistant-container{
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    margin-right: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.contact-to-assistant-container:hover{
+    cursor: pointer;
+}
+
+.chat-container{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    position: relative;
+    top: -130px;
+    right: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow-x: hidden;
+}
+
+.assistant-header{
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    box-shadow: 0 0 5px black;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+
+.close-chat-btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    font-weight: 600px;
+    text-shadow: 0 0 2px white;
+}
+
+.close-chat-btn:hover{
+    cursor: pointer;
+}
+
+.text-chat-container{
+    width: 100%;
+    height: calc(73% + 15px);
+    margin-bottom: 49px;
+    border: 0;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.input-field{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    position: fixed;
+}
+
+.chat-input{
+    width: 60%;
+    height: 40px;
+    flex-wrap: wrap;
+    border: 0;
+    background-color: white;
+}
+
+.bot-text{
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    flex-wrap: wrap;
+}
+
+.send-chat-btn{
+    width: 114px;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.3);
+    border: 1px solid blue;
+    border-radius: 20px;
+}
+
+.chat-txt{
+    width: 180px;
+    height: 30px;
+    background-color: red;
+    margin-top: 85px;
+}
+
+.servise-listsabout{
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-color: #e2e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #d5dada;
+}
+
+
+.servise-listsabout p,
+.servise-listsabout a{
+    height: 35px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    animation: lists linear 0.2s;
+    text-decoration: dashed;
+    border-bottom: 1px solid #d5dada;
+}
+
+.servise-listsabout p:hover{
+    background-color: #bcbdbd;
+}
+
+.about-usin-main{
+    width: 90%;
+    height: auto;
+    background-color: #d3d4d4;
+    color: #777;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container-forabout{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+}
+
+.text-container-forabout h1{
+    margin-left: 50px;
+    margin-top: 50px;
+}
 
 @keyframes textcont {
     0%{

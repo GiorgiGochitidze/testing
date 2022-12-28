@@ -22,6 +22,8 @@ const Navbar = () => {
   const [gr, setGr] = useState(false)
   //servicelists
   const [listi, setListi] = useState(false)
+  const [listiabout, setListiabout] = useState(false)
+  const [listiproject, setListiproject] = useState(false)
 
   const english = () => {
     setGr(false)
@@ -60,22 +62,43 @@ const Navbar = () => {
         {ge && <header>
             <nav>
                 <Link to='/' style={{textDecoration: 'none', color: 'black'}}><p>მთავარი</p></Link>
-                  <Link to='/News' style={{textDecoration: 'none', color: 'black'}}><p>სიახლეები</p></Link>
-                  <div style={{cursor: "pointer"}} className='servise-container' onMouseEnter={() => listi ? setListi(false) : setListi(true)} onMouseLeave={() => setListi(false)}>
-                    <p>სერვისი</p>
+                <div style={{cursor: "pointer"}} className='servise-container' onMouseEnter={() => listiabout ? setListiabout(false) : setListiabout(true)} onMouseLeave={() => setListiabout(false)}>
+                    <p>ჩვენ შესახებ</p>
                       
-                    {listi && 
-                    <div className='servise-lists'>
-                      <Link to="/Partners"><p>დონორები</p></Link>
-                      <Link to="/Library"><p>ბიბლიოთეკა</p></Link>
-                      <Link to="/Gallery"><p>გალერეა</p></Link>
+                    {listiabout && 
+                    <div className='servise-listsabout'>
+                      <Link to="/Proces"><p>ორგანიზაციის შესახებ</p></Link>
+                      <Link to="/Proces"><p>ჩვენი გუნდი</p></Link>
+                      <Link to="/Proces"><p>ღირებულებები</p></Link>
                     </div>
                     }
                     </div>
-                    <Link to="/Contactus" style={{textDecoration: 'none', color: 'black'}}><p>კონტაქტი</p></Link>
-                    <Link to="/Aboutus" style={{textDecoration: 'none', color: 'black'}}><p>ჩვენს შესახებ</p></Link>
+                  <div style={{cursor: "pointer"}} className='servise-container' onMouseEnter={() => listi ? setListi(false) : setListi(true)} onMouseLeave={() => setListi(false)}>
+                    <p>სერვისები</p>
+                      
+                    {listi && 
+                    <div className='servise-lists'>
+                      <Link to="/Proces"><p>ინდივიდუალური</p></Link>
+                      <Link to="/Proces"><p>კორპორატიული</p></Link>
+                      <Link to="/Proces"><p>პარტნიორები</p></Link>
+                    </div>
+                    }
+                    </div>
+                    <div style={{cursor: "pointer"}} className='servise-container' onMouseEnter={() => listiproject ? setListiproject(false) : setListiproject(true)} onMouseLeave={() => setListiproject(false)}>
+                    <p>პროექტები</p>
+                      
+                    {listiproject && 
+                    <div className='servise-listsabout'>
+                      <Link to="/Proces"><p>მიმდინარე</p></Link>
+                      <Link to="/Proces"><p>დასრულებული</p></Link>
+                      <Link to="/Proces"><p>ანგარიშები</p></Link>
+                      <Link to="/Proces"><p>დონორები</p></Link>
+                    </div>
+                    }
+                    </div>
+                    <Link to="/Library" style={{textDecoration: 'none', color: 'black'}}><p>ბიბლიოთეკა</p></Link>
                     <Link to="/Login" style={{textDecoration: 'none', color: 'black'}}><p>შესვლა</p></Link>
-                    <Link to="/Register" style={{textDecoration: 'none', color: 'black'}}><p>რეგისტრაცია</p></Link>
+                    <Link to="/Proces" style={{textDecoration: 'none', color: 'black'}}><p>დონაცია</p></Link>
                 <div className='languages' onMouseEnter={() => lists ? setLists(false) : setLists(true)} onMouseLeave={() => setLists(false)}>
                   <img src='../georgia-icon.png' alt='georgian icon'/>
                   <p style={{marginTop: '-10px', marginLeft: '3px'}}>ქართული <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
@@ -100,79 +123,135 @@ const Navbar = () => {
                   <button className="menu-btn" onClick={() => {menu ? setMenu(false) : setMenu(true)}}>Menu</button>
             </nav>
           </header>}
+
+          {/* english version of website */}
     
           {en && <header>
-                    <nav>
-                        <Link to='/HomeEnglish' style={{textDecoration: 'none', color: 'black'}}><p>Main</p></Link>
-                        <Link to='/Newsen' style={{textDecoration: 'none', color: 'black'}}><p>News</p></Link>
-                        <div style={{cursor: "pointer"}} className='servise-container' onMouseEnter={() => listi ? setListi(false) : setListi(true)} onMouseLeave={() => setListi(false)}>
-                            <p>Service</p>
-                            
-                            {listi && 
-                            <div className='servise-lists'>
-                            <Link to="/Partnersen"><p>Donors</p></Link>
-                            <Link to="/Libraryen"><p>Library</p></Link>
-                            <Link to="/Gallery"><p>Gallery</p></Link>
-                            </div>
-                            }
-                            </div>
-                        <Link to='/Contactusen' style={{textDecoration: 'none', color: 'black'}}><p>Contact</p></Link>
-                        <Link to="/Aboutusen" style={{textDecoration: 'none', color: 'black'}}><p>About US</p></Link>
-                        <Link to='/Loginen' style={{textDecoration: 'none', color: 'black'}}><p>Login</p></Link>
-                        <Link to='/Registeren' style={{textDecoration: 'none', color: 'black'}}><p>Register</p></Link>
-                        <div className='languages' onMouseEnter={() => listsen ? setListsen(false) : setListsen(true)} onMouseLeave={() => setListsen(false)}>
-                        <img src='../usa-icon.png' alt='georgian icon'/>
-                        <p style={{marginTop: '-10px', marginLeft: '3px'}}>English <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
-                        {listsen && 
-                        <div className='lists'>
-                            <div className='usa' onClick={georgia}>
-                            <img src='../georgia-icon.png' />
-                            <Link style={{textDecoration: 'none', color: 'black'}} to='/'><p style={{marginTop: '5px'}}>Georgian</p></Link>
-                            </div>
-    
-                            <div className='usa' onClick={german}>
-                            <img src='../german-icon.png' />
-                            <Link style={{textDecoration: 'none', color: 'black'}} to="/HomeGerman"><p style={{marginTop: '5px'}}>German</p></Link>
-                            </div>
-                        </div>}
-                        </div>
-                        <button className="menu-btn" onClick={() => {menu ? setMenu(false) : setMenu(true)}}>Menu</button>
-                    </nav>
-                </header>}
-    
-          {gr && <header>
             <nav>
-                <Link to='/HomeGerman' style={{textDecoration: 'none', color: 'black'}}><p>hauptsächlich</p></Link>
-                <Link to='/Newsgr' style={{textDecoration: 'none', color: 'black'}}><p>Nachrichten</p></Link>
-                <div style={{cursor: "pointer"}} className='servise-container' onMouseEnter={() => listi ? setListi(false) : setListi(true)} onMouseLeave={() => setListi(false)}>
-                    <p>Servise</p>
+                <Link to='/HomeEnglish' style={{textDecoration: 'none', color: 'black'}}><p>Main</p></Link>
+                <div style={{cursor: "pointer"}} className='servise-container' onMouseEnter={() => listiabout ? setListiabout(false) : setListiabout(true)} onMouseLeave={() => setListiabout(false)}>
+                    <p>About US</p>
                       
-                    {listi && 
-                    <div className='servise-lists'>
-                      <Link to="/Partnersgr"><p>Spender</p></Link>
-                      <Link to="/Librarygr"><p>Bibliothek</p></Link>
-                      <Link to="/Gallery"><p>Galerie</p></Link>
+                    {listiabout && 
+                    <div className='servise-listsabout'>
+                      <Link to="/Procesen"><p>About the organization</p></Link>
+                      <Link to="/Procesen"><p>Our team</p></Link>
+                      <Link to="/Procesen"><p>Values</p></Link>
                     </div>
                     }
                     </div>
-                <Link to="/Contactusgr" style={{textDecoration: 'none', color: 'black'}}><p>Kontakt</p></Link>
-                <Link to="/Aboutusgr" style={{textDecoration: 'none', color: 'black'}}><p>Über uns</p></Link>
-                <Link to="/Logingr" style={{textDecoration: 'none', color: 'black'}}><p>Einloggen</p></Link>
-                <Link to="/Registergr" style={{textDecoration: 'none', color: 'black'}}><p>Anmeldung</p></Link>
-                <div className='languages' onMouseEnter={() => listsgr ? setListsgr(false) : setListsgr(true)} onMouseLeave={() => setListsgr(false)}>
-                  <img src='../german-icon.png' alt='georgian icon'/>
-                  <p style={{marginTop: '-10px', marginLeft: '3px'}}>German <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
-                  {listsgr && 
+                  <div style={{cursor: "pointer"}} className='servise-container' onMouseEnter={() => listi ? setListi(false) : setListi(true)} onMouseLeave={() => setListi(false)}>
+                    <p>Services</p>
+                      
+                    {listi && 
+                    <div className='servise-lists'>
+                      <Link to="/Procesen"><p>Individual</p></Link>
+                      <Link to="/Procesen"><p>Corporate</p></Link>
+                      <Link to="/Procesen"><p>Partners</p></Link>
+                    </div>
+                    }
+                    </div>
+                    <div style={{cursor: "pointer"}} className='servise-container' onMouseEnter={() => listiproject ? setListiproject(false) : setListiproject(true)} onMouseLeave={() => setListiproject(false)}>
+                    <p>Projects</p>
+                      
+                    {listiproject && 
+                    <div className='servise-listsabout'>
+                      <Link to="/Procesen"><p>Current</p></Link>
+                      <Link to="/Procesen"><p>Finished</p></Link>
+                      <Link to="/Procesen"><p>Accounts</p></Link>
+                      <Link to="/Procesen"><p>Donors</p></Link>
+                    </div>
+                    }
+                    </div>
+                    <Link to="/Library" style={{textDecoration: 'none', color: 'black'}}><p>Library</p></Link>
+                    <Link to="/Login" style={{textDecoration: 'none', color: 'black'}}><p>Log in</p></Link>
+                    <Link to="/Procesen" style={{textDecoration: 'none', color: 'black'}}><p>Donation</p></Link>
+                <div className='languages' onMouseEnter={() => lists ? setLists(false) : setLists(true)} onMouseLeave={() => setLists(false)}>
+                  <img src='../usa-icon.png' alt='georgian icon'/>
+                  <p style={{marginTop: '-10px', marginLeft: '3px'}}>English <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
+                {/* main menu end */}
+    
+                {/* languages list */}
+                  {lists && 
                   <div className='lists'>
                     <div className='usa' onClick={georgia}>
                       <img src='../georgia-icon.png' />
                       <Link style={{textDecoration: 'none', color: 'black'}} to='/'><p style={{marginTop: '5px', marginLeft: '5px'}}>Georgian</p></Link>
                     </div>
     
-                    <div className='usa'>
-                      <img src='../usa-icon.png' />
-                      <Link style={{textDecoration: 'none', color: 'black'}} to='/HomeEnglish'><p style={{marginTop: '5px', marginLeft: '5px'}}>English</p></Link>
+                    <div className='usa' onClick={german}>
+                      <img src='../german-icon.png' />
+                      <Link style={{textDecoration: 'none', color: 'black'}} to="/HomeGerman"><p style={{marginTop: '5px', marginLeft: '5px'}}>German</p></Link>
                     </div>
+    
+                  {/* languages list end */}
+                  </div>}
+                </div>
+                  <button className="menu-btn" onClick={() => {menu ? setMenu(false) : setMenu(true)}}>Menu</button>
+            </nav>
+          </header>}
+
+          {/* german version of website */}
+
+          {gr && <header>
+            <nav>
+                <Link to='/HomeGerman' style={{textDecoration: 'none', color: 'black'}}><p>hauptsächlich</p></Link>
+                <div style={{cursor: "pointer"}} className='servise-container' onMouseEnter={() => listiabout ? setListiabout(false) : setListiabout(true)} onMouseLeave={() => setListiabout(false)}>
+                    <p>über uns</p>
+                      
+                    {listiabout && 
+                    <div className='servise-listsabout'>
+                      <Link to="/Procesgr"><p>Über die Organisation</p></Link>
+                      <Link to="/Procesgr"><p>unser Team</p></Link>
+                      <Link to="/Procesgr"><p>Werte</p></Link>
+                    </div>
+                    }
+                    </div>
+                  <div style={{cursor: "pointer"}} className='servise-container' onMouseEnter={() => listi ? setListi(false) : setListi(true)} onMouseLeave={() => setListi(false)}>
+                    <p>Dienstleistungen</p>
+                      
+                    {listi && 
+                    <div className='servise-lists'>
+                      <Link to="/Procesgr"><p>Individuell</p></Link>
+                      <Link to="/Procesgr"><p>Unternehmen</p></Link>
+                      <Link to="/Procesgr"><p>Partner</p></Link>
+                    </div>
+                    }
+                    </div>
+                    <div style={{cursor: "pointer"}} className='servise-container' onMouseEnter={() => listiproject ? setListiproject(false) : setListiproject(true)} onMouseLeave={() => setListiproject(false)}>
+                    <p>Projekte</p>
+                      
+                    {listiproject && 
+                    <div className='servise-listsabout'>
+                      <Link to="/Procesgr"><p>Strom</p></Link>
+                      <Link to="/Procesgr"><p>fertig bearbeitet</p></Link>
+                      <Link to="/Procesgr"><p>Konten</p></Link>
+                      <Link to="/Procesgr"><p>Spender</p></Link>
+                    </div>
+                    }
+                    </div>
+                    <Link to="/Library" style={{textDecoration: 'none', color: 'black'}}><p>Bibliothek</p></Link>
+                    <Link to="/Login" style={{textDecoration: 'none', color: 'black'}}><p>Einloggen</p></Link>
+                    <Link to="/Procesgr" style={{textDecoration: 'none', color: 'black'}}><p>Spende</p></Link>
+                <div className='languages' onMouseEnter={() => lists ? setLists(false) : setLists(true)} onMouseLeave={() => setLists(false)}>
+                  <img src='../german-icon.png' alt='georgian icon'/>
+                  <p style={{marginTop: '-10px', marginLeft: '3px'}}>Deutsch <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
+                {/* main menu end */}
+    
+                {/* languages list */}
+                  {lists && 
+                  <div className='lists'>
+                    <div className='usa' onClick={georgia}>
+                      <img src='../georgia-icon.png' />
+                      <Link style={{textDecoration: 'none', color: 'black'}} to='/'><p style={{marginTop: '5px', marginLeft: '5px'}}>georgisch</p></Link>
+                    </div>
+    
+                    <div className='usa' onClick={english}>
+                      <img src='../usa-icon.png' />
+                      <Link style={{textDecoration: 'none', color: 'black'}} to="/HomeEnglish"><p style={{marginTop: '5px', marginLeft: '5px'}}>Englisch</p></Link>
+                    </div>
+    
+                  {/* languages list end */}
                   </div>}
                 </div>
                   <button className="menu-btn" onClick={() => {menu ? setMenu(false) : setMenu(true)}}>Menu</button>

@@ -5,9 +5,7 @@ import Projects from './Projects';
 import Courseend from './Courseend';
 import News from './News';
 import Footer from './Footer';
-import Login from './Login';
-import Totop from './Totop';
-import { useState, useEffect } from 'react';
+import Assistant from '../assistant/Assistant';
 
 
 
@@ -16,6 +14,8 @@ const Home = ({Link}) => {
 
     return (
         <div className='container1'>
+            
+        <Assistant />
 
         <Content Link={Link} />
 
@@ -28,6 +28,7 @@ const Home = ({Link}) => {
         <News Link={Link} />
 
         <Footer />
+
         </div>
      );
 }
