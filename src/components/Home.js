@@ -1,7 +1,7 @@
 import Content from './Content';
 import '../Home.css'
 import MiniPanel from './MiniPanel';
-import Projects from './Projects';
+import MadAbout from './MadAbout';
 import Courseend from './Courseend';
 import News from './News';
 import Footer from './Footer';
@@ -21,7 +21,7 @@ const Home = ({Link}) => {
 
         <MiniPanel />
 
-        <Projects />
+        <MadAbout />
 
         <Courseend />
 
