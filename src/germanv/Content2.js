@@ -10,7 +10,7 @@ const Content1 = () => {
 
     return ( 
         <div className="content-container">
-             <img src='./img1.jpg' />
+             <img src='./img1.jpg' alt="" />
             <div className="list1">
                 <div data-aos="fade-down" className="first" style={{textAlign: 'center'}}><p>Saorsa</p></div>
                 <div data-aos="fade-down" className="second" style={{textAlign: 'center'}}><p>Saorsa<br /> Beratung</p></div>

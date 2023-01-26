@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css"
 import { useEffect, useState } from "react";
 
 
-const Registration = () => {
+const Registration = ({Link}) => {
 
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
@@ -30,10 +29,6 @@ const Registration = () => {
       function handleSubmit(e) {
         e.preventDefault();
         // save the values to a database or API here
-      }
-
-      function handlePasswordChange(e) {
-        setPassword(e.target.value);
       }
     
       function handleGenderChange(e) {

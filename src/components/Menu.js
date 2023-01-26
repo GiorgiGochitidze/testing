@@ -1,5 +1,5 @@
 import "../Home.css"
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import "aos/dist/aos.css"
 
 const Menu = ({Link, german, english, lists, setLists, setListsen, setListsgr, listsen, listsgr, georgia, en , ge ,gr}) => {
@@ -30,19 +30,19 @@ const Menu = ({Link, german, english, lists, setLists, setListsen, setListsgr, l
              <Link to='/Register' style={{textDecoration: 'none', color: 'black'}}><p className="nav-links10">რეგისტრაცია</p></Link>
              <div style={{display: "flex"}} className='language' onMouseEnter={() => lists ? setLists(false) : setLists(true)} onMouseLeave={() => setLists(false)}>
               <img src='../georgia-icon.png' alt='georgian icon'/>
-              <p style={{marginTop: '-10px', marginLeft: '3px'}}>ქართული <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
+              <p style={{marginTop: '-10px', marginLeft: '3px'}}>ქართული <img alt="" style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
             {/* main menu end */}
 
             {/* languages list */}
               {lists && 
               <div style={{marginTop: '-4px'}} className='listes'>
                 <div className='usa' onClick={english}>
-                  <img src='../usa-icon.png' />
+                  <img alt="" src='../usa-icon.png' />
                   <Link style={{textDecoration: 'none', color: 'black'}} to='/HomeEnglish'><p style={{marginTop: '5px', marginLeft: '5px'}}>ინგლისური</p></Link>
                 </div>
 
                 <div className='usa' onClick={german}>
-                  <img src='../german-icon.png' />
+                  <img alt="" src='../german-icon.png' />
                   <Link style={{textDecoration: 'none', color: 'black'}} to="/HomeGerman"><p style={{marginTop: '5px', marginLeft: '5px'}}>გერმანული</p></Link>
                 </div>
 
@@ -75,19 +75,19 @@ const Menu = ({Link, german, english, lists, setLists, setListsen, setListsgr, l
              <Link to='/Register' style={{textDecoration: 'none', color: 'black'}}><p className="nav-links10">Register</p></Link>
              <div style={{display: "flex"}} className='language' onMouseEnter={() => listsen ? setListsen(false) : setListsen(true)} onMouseLeave={() => setListsen(false)}>
               <img src='../usa-icon.png' alt='usa icon'/>
-              <p style={{marginTop: '-10px', marginLeft: '3px'}}>English <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
+              <p style={{marginTop: '-10px', marginLeft: '3px'}}>English <img alt="" style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
             {/* main menu end */}
 
             {/* languages list */}
               {listsen && 
               <div style={{marginTop: '-4px'}} className='listes'>
                 <div className='usa' onClick={georgia}>
-                  <img src='../georgia-icon.png' />
+                  <img alt="" src='../georgia-icon.png' />
                   <Link style={{textDecoration: 'none', color: 'black'}} to='/'><p style={{marginTop: '5px', marginLeft: '5px'}}>Georgian</p></Link>
                 </div>
 
                 <div className='usa' onClick={german}>
-                  <img src='../german-icon.png' />
+                  <img alt="" src='../german-icon.png' />
                   <Link style={{textDecoration: 'none', color: 'black'}} to="/HomeGerman"><p style={{marginTop: '5px', marginLeft: '5px'}}>German</p></Link>
                 </div>
 
@@ -120,19 +120,19 @@ const Menu = ({Link, german, english, lists, setLists, setListsen, setListsgr, l
              <Link to='/Register' style={{textDecoration: 'none', color: 'black'}}><p className="nav-links10" href='#'>Anmeldung</p></Link>
              <div style={{display: "flex"}} className='language' onMouseEnter={() => listsgr ? setListsgr(false) : setListsgr(true)} onMouseLeave={() => setListsgr(false)}>
               <img src='../german-icon.png' alt='german icon'/>
-              <p style={{marginTop: '-10px', marginLeft: '3px'}}>German <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
+              <p style={{marginTop: '-10px', marginLeft: '3px'}}>German <img alt="" style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
             {/* main menu end */}
 
             {/* languages list */}
               {listsgr && 
               <div style={{marginTop: '-4px'}} className='listes'>
                 <div className='usa' onClick={georgia}>
-                  <img src='../georgia-icon.png' />
+                  <img alt="" src='../georgia-icon.png' />
                   <p style={{marginTop: '5px', marginLeft: '5px'}}><Link style={{textDecoration: 'none', color: 'black'}} to='/'>Georgian</Link></p>
                 </div>
 
                 <div className='usa' onClick={german}>
-                  <img src='../usa-icon.png' />
+                  <img alt="" src='../usa-icon.png' />
                   <p style={{marginTop: '5px', marginLeft: '5px'}}><Link style={{textDecoration: 'none', color: 'black'}} to="/HomeEnglish">English</Link></p>
                 </div>
 

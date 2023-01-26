@@ -12,14 +12,14 @@ const Gallery = () => {
     return ( 
         <div className="gallery-container">
             <div className="gallery-content">
-                <img data-aos="fade-up" className="hundred-to-ten" src="../img3.jpg"/>
-                    <img data-aos="fade-up" className="twohundred-to-thirty" src="../img4.jpg"/>
+                <img data-aos="fade-up" alt="" className="hundred-to-ten" src="../img3.jpg"/>
+                    <img data-aos="fade-up" alt="" className="twohundred-to-thirty" src="../img4.jpg"/>
                     <div style={{display: "flex", flexDirection: "column", gap: "10px"}}>
-                        <img data-aos="fade-up" className="cubes" src="../img5.jpg"/>
-                        <img data-aos="fade-up" className="cubes" src="../img6.jpg"/>
+                        <img alt="" data-aos="fade-up" className="cubes" src="../img5.jpg"/>
+                        <img alt="" data-aos="fade-up" className="cubes" src="../img6.jpg"/>
                     </div>
-                <img data-aos="fade-up" className="threehundred" src="../img7.jpg"/>
-                <img data-aos="fade-up" className="looks-like-first" src="../img8.jpg"/>
+                <img alt="" data-aos="fade-up" className="threehundred" src="../img7.jpg"/>
+                <img alt="" data-aos="fade-up" className="looks-like-first" src="../img8.jpg"/>
             </div>
         </div>
      );

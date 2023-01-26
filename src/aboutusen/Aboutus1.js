@@ -14,9 +14,9 @@ const AboutUs2 = () => {
                 <h1 className="about-name">Mission</h1>
                 {text && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia1.jpg" />
-                        <img src="../misia2.jpg" />
-                        <img src="../misia3.jpg" />
+                        <img src="../misia1.jpg" alt="" />
+                        <img src="../misia2.jpg" alt="" />
+                        <img src="../misia3.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>Strengthening employment opportunities in the local and international labor market, especially for youth and women, by increasing access to non-formal education and promoting employment policies.</p>
                 </div>
@@ -27,8 +27,8 @@ const AboutUs2 = () => {
                 <h1 className="about-name">View</h1>
                 {text1 && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia4.jpg" />
-                        <img src="../misia5.jpg" />
+                        <img src="../misia4.jpg" alt="" />
+                        <img src="../misia5.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>Everyone has the right to be happy, to have the freedom to choose a profession, to be employed and to realize the principles of decent work.</p>
                 </div>
@@ -39,8 +39,8 @@ const AboutUs2 = () => {
                 <h1 className="about-name">Purpose</h1>
                 {text2 && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia4.jpg" />
-                        <img src="../misia5.jpg" />
+                        <img src="../misia4.jpg" alt="" />
+                        <img src="../misia5.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>
                         <ul>
@@ -59,8 +59,8 @@ const AboutUs2 = () => {
                 <h1 className="about-name">Values</h1>
                 {text3 && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia4.jpg" />
-                        <img src="../misia5.jpg" />
+                        <img src="../misia4.jpg" alt="" />
+                        <img src="../misia5.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>
                             <p>1. respect and love; personal and professional motivation for people's happiness;</p>
@@ -83,8 +83,8 @@ const AboutUs2 = () => {
                 <h1 className="about-name">Basics</h1>
                 {text4 && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia4.jpg" />
-                        <img src="../misia5.jpg" />
+                        <img src="../misia4.jpg" alt="" />
+                        <img src="../misia5.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>
                     Saorsa is a membership-based non-entrepreneurial (non-profit) legal entity founded on March 15, 2018.

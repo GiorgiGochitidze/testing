@@ -14,9 +14,9 @@ const AboutUs = () => {
                 <h1 className="about-name">მისია</h1>
                 {text && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia1.jpg" />
-                        <img src="../misia2.jpg" />
-                        <img src="../misia3.jpg" />
+                        <img src="../misia1.jpg" alt="" />
+                        <img src="../misia2.jpg" alt="" />
+                        <img src="../misia3.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>ადგილობრივ და საერთაშორისო შრომის ბაზარზე დასაქმების შესაძლებლობების გაძლიერება, განსაკუთრებით, ახალგაზრდებისა და ქალებისთვის, არაფორმალური განათლების ხელმისაწვდომობის გაზრდით და დასაქმების პოლიტიკის ხელშეწყობით.</p>
                 </div>
@@ -27,8 +27,8 @@ const AboutUs = () => {
                 <h1 className="about-name">ხედვა</h1>
                 {text1 && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia4.jpg" />
-                        <img src="../misia5.jpg" />
+                        <img src="../misia4.jpg" alt="" />
+                        <img src="../misia5.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>ყველას აქვს უფლება იყოს ბედნიერი, ჰქონდეს პროფესიის არჩევის, დასაქმებისა და ღირსეული შრომის პრინციპების რეალიზაციის თავისუფლება.</p>
                 </div>
@@ -39,8 +39,8 @@ const AboutUs = () => {
                 <h1 className="about-name">მიზანი</h1>
                 {text2 && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia4.jpg" />
-                        <img src="../misia5.jpg" />
+                        <img src="../misia4.jpg" alt="" />
+                        <img src="../misia5.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>
                         <ul>
@@ -59,8 +59,8 @@ const AboutUs = () => {
                 <h1 className="about-name">ღირებულებები</h1>
                 {text3 && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia4.jpg" />
-                        <img src="../misia5.jpg" />
+                        <img src="../misia4.jpg" alt="" />
+                        <img src="../misia5.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>
                             <p>1. პატივისცემა და სიყვარული; პიროვნული და პროფესიული მოტივაცია ადამიანების ბედნიერებისთვის;</p>
@@ -83,8 +83,8 @@ const AboutUs = () => {
                 <h1 className="about-name">ძირითადი</h1>
                 {text4 && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia4.jpg" />
-                        <img src="../misia5.jpg" />
+                        <img src="../misia4.jpg" alt="" />
+                        <img src="../misia5.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>
                     საორსა არის წევრობაზე დაფუძნებული არასამეწარმეო (არაკომერციული) იურიდიული პირი, რომელიც დაარსდა 2018 წლის 15 მარტს.

@@ -6,7 +6,7 @@ const Projects = () => {
             <div className="sourse-projects">
                 <div className="firstlist">
                     <div className="inside-project">
-                        <img src="./img2.jpg" />
+                        <img alt="" src="./img2.jpg" />
                         <div>
                         <h3>Project - Gela</h3>
                         <p>Here are the biggest enterprise technology. in reverse chronological order.</p>
@@ -14,7 +14,7 @@ const Projects = () => {
                     </div>
 
                     <div className="inside-project">
-                        <img src="./img2.jpg" />
+                        <img alt="" src="./img2.jpg" />
                         <div>
                         <h3>Project - Elguja</h3>
                         <p>Here are the biggest enterprise technology. in reverse chronological order.</p>
@@ -22,7 +22,7 @@ const Projects = () => {
                     </div>
 
                     <div className="inside-project">
-                        <img src="./img2.jpg" />
+                        <img alt="" src="./img2.jpg" />
                         <div>
                         <h3>Project - Jumberi</h3>
                         <p>Here are the biggest enterprise technology. in reverse chronological order.</p>
@@ -32,7 +32,7 @@ const Projects = () => {
 
                 <div className="secondlist">
                     <div className="inside-project">
-                        <img src="./img2.jpg" />
+                        <img alt="" src="./img2.jpg" />
                         <div>
                         <h3>Project - Soso</h3>
                         <p>Here are the biggest enterprise technology. in reverse chronological order.</p>
@@ -40,7 +40,7 @@ const Projects = () => {
                     </div>
 
                     <div className="inside-project">
-                        <img src="./img2.jpg" />
+                        <img alt="" src="./img2.jpg" />
                         <div>
                         <h3>Project - Irakli</h3>
                         <p>Here are the biggest enterprise technology. in reverse chronological order.</p>
@@ -48,7 +48,7 @@ const Projects = () => {
                     </div>
 
                     <div className="inside-project">
-                        <img src="./img2.jpg" />
+                        <img alt="" src="./img2.jpg" />
                         <div>
                         <h3>Project - Mzia</h3>
                         <p>Here are the biggest enterprise technology. in reverse chronological order.</p>

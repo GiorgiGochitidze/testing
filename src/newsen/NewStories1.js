@@ -3,7 +3,7 @@ import NewsContent1 from "./NewsContent1";
 const NewStories = () => {
     return ( 
         <div className="news-content-container">
-            <img src="../img1.jpg" />
+            <img alt="" src="../img1.jpg" />
 
             <NewsContent1 />
         </div>

@@ -15,7 +15,7 @@ const Courseend = () => {
 
             <div className="sourses-projects">
                 <div data-aos="fade-right" className="inside-projects">
-                    <img src="./img3.jpg" />
+                    <img alt="" src="./img3.jpg" />
                     <div>
                     <p style={{marginLeft: '20px'}}>some text Perhaps the participant's short<br /> 
                     Ein Wort zum Projekt. wie viel<br /> zufrieden ist und so weiter.
@@ -24,7 +24,7 @@ const Courseend = () => {
                 </div>
 
                 <div data-aos="fade-left" className="inside-projects">
-                    <img src="./img4.jpg" />
+                    <img alt="" src="./img4.jpg" />
                     <div>
                     <p style={{marginLeft: '20px'}}>some text Perhaps the participant's short<br />
                      Ein Wort zum Projekt. wie viel<br /> zufrieden ist und so weiter.
@@ -33,7 +33,7 @@ const Courseend = () => {
                 </div>
 
                 <div data-aos="fade-right" className="inside-projects">
-                    <img src="./img5.jpg" />
+                    <img alt="" src="./img5.jpg" />
                     <div>
                     <p style={{marginLeft: '20px'}}>some text Perhaps the participant's short<br />
                      Ein Wort zum Projekt. wie viel<br /> zufrieden ist und so weiter.
@@ -43,7 +43,7 @@ const Courseend = () => {
                 </div>
 
                 <div data-aos="fade-left" className="inside-projects">
-                    <img src="./img6.jpg" />
+                    <img alt="" src="./img6.jpg" />
                     <div>
                     <p style={{marginLeft: '20px'}}>some text Perhaps the participant's short<br /> 
                     Ein Wort zum Projekt. wie viel<br /> zufrieden ist und so weiter. <br /> <br /> <span style={{color: '#00afaf'}}>Vorname Nachname</span><br /><br />
@@ -52,7 +52,7 @@ const Courseend = () => {
                 </div>
 
                 <div data-aos="fade-right" className="inside-projects">
-                    <img src="./img7.jpg" />
+                    <img alt="" src="./img7.jpg" />
                     <div>
                     <p style={{marginLeft: '20px'}}>some text Perhaps the participant's short<br /> Ein Wort zum Projekt. wie viel<br />
                      zufrieden ist und so weiter. <br /> <br /> <span style={{color: '#00afaf'}}>Vorname Nachname</span><br /><br />
@@ -61,7 +61,7 @@ const Courseend = () => {
                 </div>
 
                 <div data-aos="fade-left" className="inside-projects">
-                    <img src="./img8.jpg" />
+                    <img alt="" src="./img8.jpg" />
                     <div>
                     <p style={{marginLeft: '20px'}}>some text Perhaps the participant's short<br /> Ein Wort zum Projekt. wie viel<br />
                      zufrieden ist und so weiter. <br /> <br /> <span style={{color: '#00afaf'}}>Vorname Nachname</span> <br /> <br />

@@ -15,7 +15,7 @@ const Courseend = () => {
 
             <div className="sourses-projects">
                 <div data-aos="fade-right" className="inside-projects">
-                    <img src="./img3.jpg" />
+                    <img src="./img3.jpg" alt="" />
                     <div>
                     <p style={{marginLeft: '20px'}}>რამე ტექსტი. ალბათ მონაწილის მოკლე<br /> 
                     სიტყვა პროექტის შესახებ. რამდენად<br /> კმაყოფილია და ასე შემდეგ.
@@ -24,7 +24,7 @@ const Courseend = () => {
                 </div>
 
                 <div data-aos="fade-left" className="inside-projects">
-                    <img src="./img4.jpg" />
+                    <img src="./img4.jpg" alt="" />
                     <div>
                     <p style={{marginLeft: '20px'}}>რამე ტექსტი. ალბათ მონაწილის მოკლე<br />
                      სიტყვა პროექტის შესახებ. რამდენად<br /> კმაყოფილია და ასე შემდეგ.
@@ -33,7 +33,7 @@ const Courseend = () => {
                 </div>
 
                 <div data-aos="fade-right" className="inside-projects">
-                    <img src="./img5.jpg" />
+                    <img src="./img5.jpg" alt="" />
                     <div>
                     <p style={{marginLeft: '20px'}}>რამე ტექსტი. ალბათ მონაწილის მოკლე<br />
                      სიტყვა პროექტის შესახებ. რამდენად<br /> კმაყოფილია და ასე შემდეგ.
@@ -43,7 +43,7 @@ const Courseend = () => {
                 </div>
 
                 <div data-aos="fade-left" className="inside-projects">
-                    <img src="./img6.jpg" />
+                    <img src="./img6.jpg" alt="" />
                     <div>
                     <p style={{marginLeft: '20px'}}>რამე ტექსტი. ალბათ მონაწილის მოკლე<br /> სიტყვა პროექტის შესახებ.
                      რამდენად<br /> კმაყოფილია და ასე შემდეგ. <br /> <br /> <span style={{color: '#00afaf'}}>სახელი გვარი</span><br /><br />
@@ -52,7 +52,7 @@ const Courseend = () => {
                 </div>
 
                 <div data-aos="fade-right" className="inside-projects">
-                    <img src="./img7.jpg" />
+                    <img alt="" src="./img7.jpg" />
                     <div>
                     <p style={{marginLeft: '20px'}}>რამე ტექსტი. ალბათ მონაწილის მოკლე<br /> სიტყვა პროექტის შესახებ. რამდენად<br />
                      კმაყოფილია და ასე შემდეგ. <br /> <br /> <span style={{color: '#00afaf'}}>სახელი გვარი</span><br /><br />
@@ -61,7 +61,7 @@ const Courseend = () => {
                 </div>
 
                 <div data-aos="fade-left" className="inside-projects">
-                    <img src="./img8.jpg" />
+                    <img src="./img8.jpg" alt="" />
                     <div>
                     <p style={{marginLeft: '20px'}}>რამე ტექსტი. ალბათ მონაწილის მოკლე<br /> სიტყვა პროექტის შესახებ. რამდენად<br />
                      კმაყოფილია და ასე შემდეგ. <br /> <br /> <span style={{color: '#00afaf'}}>სახელი გვარი</span> <br /> <br />

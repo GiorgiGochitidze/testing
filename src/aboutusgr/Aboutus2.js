@@ -14,9 +14,9 @@ const AboutUs2 = () => {
                 <h1 className="about-name">Mission</h1>
                 {text && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia1.jpg" />
-                        <img src="../misia2.jpg" />
-                        <img src="../misia3.jpg" />
+                        <img src="../misia1.jpg" alt="" />
+                        <img src="../misia2.jpg" alt="" />
+                        <img src="../misia3.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>Stärkung der Beschäftigungsmöglichkeiten auf dem lokalen und internationalen Arbeitsmarkt, insbesondere für Jugendliche und Frauen, durch Verbesserung des Zugangs zu nicht-formaler Bildung und Förderung der Beschäftigungspolitik.</p>
                 </div>
@@ -27,8 +27,8 @@ const AboutUs2 = () => {
                 <h1 className="about-name">View</h1>
                 {text1 && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia4.jpg" />
-                        <img src="../misia5.jpg" />
+                        <img src="../misia4.jpg" alt="" />
+                        <img src="../misia5.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>Das Projekt „Berufliche Orientierung für Studenten aus der Region Ajara“ wird von der Nichtregierungsorganisation „Saorsa“ in Zusammenarbeit mit der amerikanischen Ecke Batumi durchgeführt.
 
@@ -44,8 +44,8 @@ Die amerikanische Botschaft in Georgien ist der finanzielle Unterstützer des Pr
                 <h1 className="about-name">Purpose</h1>
                 {text2 && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia4.jpg" />
-                        <img src="../misia5.jpg" />
+                        <img src="../misia4.jpg" alt="" />
+                        <img src="../misia5.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>
                         <ul>
@@ -64,8 +64,8 @@ Die amerikanische Botschaft in Georgien ist der finanzielle Unterstützer des Pr
                 <h1 className="about-name">Werte</h1>
                 {text3 && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia4.jpg" />
-                        <img src="../misia5.jpg" />
+                        <img src="../misia4.jpg" alt="" />
+                        <img src="../misia5.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>
                             <p>1. Respekt und Liebe; persönliche und berufliche Motivation für das Glück der Menschen;</p>
@@ -88,8 +88,8 @@ Die amerikanische Botschaft in Georgien ist der finanzielle Unterstützer des Pr
                 <h1 className="about-name">Basics</h1>
                 {text4 && <div className="texts-content">
                     <div className="images-containers">
-                        <img src="../misia4.jpg" />
-                        <img src="../misia5.jpg" />
+                        <img src="../misia4.jpg" alt="" />
+                        <img src="../misia5.jpg" alt="" />
                     </div>
                     <p style={{lineHeight: "30px", paddingInline: "10px"}}>
                     Saorsa ist eine nicht-unternehmerische (gemeinnützige) juristische Person auf Mitgliedschaftsbasis, die am 15. März 2018 gegründet wurde.

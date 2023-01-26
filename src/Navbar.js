@@ -8,7 +8,7 @@ import Totop from './components/Totop';
 
 const Navbar = () => {
 
-      {/* menu with sets usestate mobile nav bar */}
+  //menu with sets usestate mobile nav bar
   const [menu, setMenu] = useState(false)
   //georgian list
   const [lists, setLists] = useState(false)
@@ -101,19 +101,19 @@ const Navbar = () => {
                     <Link to="/Proces" style={{textDecoration: 'none', color: 'black'}}><p>დონაცია</p></Link>
                 <div className='languages' onMouseEnter={() => lists ? setLists(false) : setLists(true)} onMouseLeave={() => setLists(false)}>
                   <img src='../georgia-icon.png' alt='georgian icon'/>
-                  <p style={{marginTop: '-10px', marginLeft: '3px'}}>ქართული <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
+                  <p style={{marginTop: '-10px', marginLeft: '3px'}}>ქართული <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' alt="" /></p>
                 {/* main menu end */}
     
                 {/* languages list */}
                   {lists && 
                   <div className='lists'>
                     <div className='usa' onClick={english}>
-                      <img src='../usa-icon.png' />
+                      <img src='../usa-icon.png' alt="" />
                       <Link style={{textDecoration: 'none', color: 'black'}} to='/HomeEnglish'><p style={{marginTop: '5px', marginLeft: '5px'}}>ინგლისური</p></Link>
                     </div>
     
                     <div className='usa' onClick={german}>
-                      <img src='../german-icon.png' />
+                      <img src='../german-icon.png' alt="" />
                       <Link style={{textDecoration: 'none', color: 'black'}} to="/HomeGerman"><p style={{marginTop: '5px', marginLeft: '5px'}}>გერმანული</p></Link>
                     </div>
     
@@ -168,19 +168,19 @@ const Navbar = () => {
                     <Link to="/Procesen" style={{textDecoration: 'none', color: 'black'}}><p>Donation</p></Link>
                 <div className='languages' onMouseEnter={() => lists ? setLists(false) : setLists(true)} onMouseLeave={() => setLists(false)}>
                   <img src='../usa-icon.png' alt='georgian icon'/>
-                  <p style={{marginTop: '-10px', marginLeft: '3px'}}>English <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
+                  <p style={{marginTop: '-10px', marginLeft: '3px'}}>English <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' alt="" /></p>
                 {/* main menu end */}
     
                 {/* languages list */}
                   {lists && 
                   <div className='lists'>
                     <div className='usa' onClick={georgia}>
-                      <img src='../georgia-icon.png' />
+                      <img src='../georgia-icon.png' alt="" />
                       <Link style={{textDecoration: 'none', color: 'black'}} to='/'><p style={{marginTop: '5px', marginLeft: '5px'}}>Georgian</p></Link>
                     </div>
     
                     <div className='usa' onClick={german}>
-                      <img src='../german-icon.png' />
+                      <img src='../german-icon.png' alt="" />
                       <Link style={{textDecoration: 'none', color: 'black'}} to="/HomeGerman"><p style={{marginTop: '5px', marginLeft: '5px'}}>German</p></Link>
                     </div>
     
@@ -235,19 +235,19 @@ const Navbar = () => {
                     <Link to="/Procesgr" style={{textDecoration: 'none', color: 'black'}}><p>Spende</p></Link>
                 <div className='languages' onMouseEnter={() => lists ? setLists(false) : setLists(true)} onMouseLeave={() => setLists(false)}>
                   <img src='../german-icon.png' alt='georgian icon'/>
-                  <p style={{marginTop: '-10px', marginLeft: '3px'}}>Deutsch <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' /></p>
+                  <p style={{marginTop: '-10px', marginLeft: '3px'}}>Deutsch <img style={{top: '12px', position: 'relative'}} src='../down-arrow.png' alt="" /></p>
                 {/* main menu end */}
     
                 {/* languages list */}
                   {lists && 
                   <div className='lists'>
                     <div className='usa' onClick={georgia}>
-                      <img src='../georgia-icon.png' />
+                      <img src='../georgia-icon.png' alt="" />
                       <Link style={{textDecoration: 'none', color: 'black'}} to='/'><p style={{marginTop: '5px', marginLeft: '5px'}}>georgisch</p></Link>
                     </div>
     
                     <div className='usa' onClick={english}>
-                      <img src='../usa-icon.png' />
+                      <img src='../usa-icon.png' alt="" />
                       <Link style={{textDecoration: 'none', color: 'black'}} to="/HomeEnglish"><p style={{marginTop: '5px', marginLeft: '5px'}}>Englisch</p></Link>
                     </div>
     

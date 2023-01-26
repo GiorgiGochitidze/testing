@@ -14,7 +14,7 @@ const News = () => {
             <h1 data-aos="fade-down">Sehen Sie sich die Nachrichten an</h1>
             <div className="news-container">
             <div data-aos="fade-right" className="news-content">
-                <img src="./img9.jpg" />
+                <img alt="" src="./img9.jpg" />
 
                 <h3>Schule für Unternehmertum <br /> und Führung.</h3>
                 <p>"Schule der Unternehmer und Führung". Im Rahmen eines Social Entrepreneurs werden Trainings in Richtung Teamführung und Teammanagement durchgeführt.</p>
@@ -22,7 +22,7 @@ const News = () => {
             </div>
 
             <div data-aos="flip-right" className="news-content">
-                <img src="./img9.jpg" />
+                <img alt="" src="./img9.jpg" />
 
                 <h3>Schule für Unternehmertum <br /> und Führung.</h3>
                 <p>"Schule der Unternehmer und Führung". Im Rahmen eines Social Entrepreneurs werden Trainings in Richtung Teamführung und Teammanagement durchgeführt.</p>
@@ -30,7 +30,7 @@ const News = () => {
             </div>
 
             <div data-aos="fade-left" className="news-content">
-                <img src="./img9.jpg" />
+                <img alt="" src="./img9.jpg" />
 
                 <h3>Schule für Unternehmertum <br /> und Führung.</h3>
                 <p>"Schule der Unternehmer und Führung". Im Rahmen eines Social Entrepreneurs werden Trainings in Richtung Teamführung und Teammanagement durchgeführt.</p>

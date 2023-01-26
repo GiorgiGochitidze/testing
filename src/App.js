@@ -3,7 +3,6 @@ import './Home.css'
 import {Routes, Route, Link, BrowserRouter} from 'react-router-dom'
 //georgian page imports
 import NewStories from './news/NewStories';
-import Partners from './donorsandpartners/Partners';
 import Home from './components/Home';
 import Procces from './components/Procces';
 import Contactus from './contactus/Contactus';
@@ -13,7 +12,6 @@ import Gallery from './components/Gallery';
 import Home1 from './englishv/Home1'
 import Biblary from './components/Biblary';
 import NewStories1 from './newsen/NewStories1';
-import Partners1 from './donorsandpartnersen/Partners1';
 import Biblary1 from './englishv/Biblary1';
 import Procces1 from './englishv/Procces1'
 import Contactus1 from './contactusen/Contactus1';
@@ -22,7 +20,6 @@ import Registration1 from './englishv/Registration1'
 //german page imports
 import Home2 from './germanv/Home2'
 import NewStories2 from './newsgr/NewStories2';
-import Partners2 from './donorsandpartnersgr/Partners2';
 import Biblary2 from './germanv/Biblary2';
 import Procces2 from './germanv/Procces2'
 import Contactus2 from './contactusgr/Contactus2';
@@ -44,19 +41,17 @@ function App() {
     <Routes>
       <Route path='/' element={<Home Link={Link} />} />
       <Route path='/News' element={<NewStories />} />
-      <Route path='/Partners' element={<Partners />} />
       <Route path='/Library' element={<Biblary />} />
       <Route path='/Gallery' element={<Gallery />} />
       <Route path='/Contactus' element={<Contactus />} />
       <Route path='/Aboutus' element={<Aboutus />} />
       <Route path='/Login' element={<Login Link={Link} />} />
-      <Route path='/Register' element={<Registration />} />
+      <Route path='/Register' element={<Registration Link={Link} />} />
       <Route path='/Proces' element={<Procces />} />
 
       {/* english version */}
       <Route path='/HomeEnglish' element={<Home1 />} />
       <Route path='/Newsen' element={<NewStories1 />} />
-      <Route path='/Partnersen' element={<Partners1 />} />
       <Route path='/Libraryen' element={<Biblary1 />} />
       <Route path='/Contactusen' element={<Contactus1 />} />
       <Route path='/Aboutusen' element={<Aboutus1 />} />
@@ -67,7 +62,6 @@ function App() {
       {/* german version */}
       <Route path='/HomeGerman' element={<Home2 />} />
       <Route path='/Newsgr' element={<NewStories2 />} />
-      <Route path='/Partnersgr' element={<Partners2 />} />
       <Route path='/Librarygr' element={<Biblary2 />} />
       <Route path='/Contactusgr' element={<Contactus2 />} />
       <Route path='/Aboutusgr' element={<Aboutus2 />} />
