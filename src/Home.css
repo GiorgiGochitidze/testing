@@ -5,6 +5,7 @@ body{
     background: #eff5f7;
     height: auto;
     scroll-behavior: smooth;
+    font-family: 'GeorgianFont', sans-serif;
 }
 
 body::-webkit-scrollbar{
@@ -46,6 +47,7 @@ header nav{
 
 header nav p{
     font-size: 100%;
+    margin-bottom: 0;
 }
 
 header nav p:hover{
@@ -877,6 +879,7 @@ footer{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    box-shadow: 0 0 5px black;
     border: 1px solid #d5dada;
     overflow: hidden;
 }
@@ -1041,14 +1044,17 @@ footer{
 }
 
 .languages{
-    width: 165px;
-    height: 40%;
+    width: 40px;
+    height: 40px;
     box-sizing: border-box;
-    background-color: #e2e5e5;
+    background: none;
     margin-top: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
+    border: 2.5px solid lawngreen;
+    border-radius: 5px;
 }
 
 /* menu languages style start */
@@ -1090,43 +1096,14 @@ footer{
 
 /* menu language style end */
 
-.lists{
-    position: absolute;
-    top: 60px;
-    width: 165px;
-    height: 70px;
-    background-color: #e2e5e5;
-    border-top: 1px solid gray;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: 0.1s;
-}
 
 .languages:hover{
-    background-color: #d1d4d4;
+    background-color: rgb(212, 212, 212, 0.3);
     cursor: pointer;
     overflow: hidden;
 }
 
-.usa{
-    width: 100%;
-    box-sizing: border-box;
-    height: 50%;
-    display: flex;
-    border-bottom: 1px solid gray;
-    overflow: hidden;
-}
 
-.usa:hover{
-    background-color: #d1d4d4;
-    overflow: hidden;
-}
-
-.lists img{
-    width: 30px;
-    overflow: hidden;
-}
 
 .languages img{
     margin-left: 5px;
@@ -1429,18 +1406,35 @@ footer{
 
 .med-info-container{
     width: 100%;
-    height: 400px;
+    height: auto;
     background-color: lightgray;
-    display: flex;
     margin-top: 50px;
-    justify-content: center;
-    align-items: center;
+    padding-block: 20px;
 }
 
-.med-info-content-container{
-    width: 90%;
-    height: 90%;
-    background-color: #c8c9c9;
+.med-info-content {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'GeorgianFont', sans-serif;
+}
+
+.med-info-header{
+    color: #4a8b71;
+    width: 200px;
+    padding-block: 5px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: GeorgianFont;
+    src: url('../public/georgianfont.ttf') format('truetype');
 }
 
 /* med info about saorsa styles end */
@@ -1589,6 +1583,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 5px black;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -1668,11 +1663,51 @@ footer{
     font-size: 16px;
     cursor: pointer;
     transition-duration: 0.5s;
+    font-family: 'GeorgianFont', sans-serif;
 }
-
+d
 .more-about-btn:hover{
     color: white;
     background-color: lawngreen;
+}
+
+.service-container{
+    width: 100%;
+    height: 1000px;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-content: center;
+    margin-top: 50px;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.service-listed-items{
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.service-button-register{
+    margin-left: 16%;
+    margin-top: 30%;
+    height: 50px;
+    width: 200px;
+    background: none;
+    border: 2.5px solid lawngreen;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.service-button-register:hover{
+    background-color: rgb(128, 128, 128, 0.5);
+    cursor: pointer;
+    color: black;
 }
 
 @keyframes textcont {
@@ -1747,6 +1782,10 @@ footer{
     .servise-cards{
         grid-template-columns: 1fr 1fr;
     }
+
+    .service-container{
+        grid-template-columns: auto auto;
+    }
 }
 
 /* screen styles when screen size is 940px */
@@ -1816,6 +1855,10 @@ footer{
 @media screen and (max-width: 700px){
     .news-dayofa{
         grid-template-columns: 1fr;
+    }
+
+    .service-container{
+        grid-template-columns: auto;
     }
 }
 
@@ -2011,6 +2054,10 @@ footer{
 
     .footer-body{
         flex-direction: column;
+    }
+
+    .service-listed-items{
+        width: 90%;
     }
 }
 

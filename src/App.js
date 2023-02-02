@@ -8,6 +8,7 @@ import Procces from './components/Procces';
 import Contactus from './contactus/Contactus';
 import Login from './components/Login';
 import Gallery from './components/Gallery';
+import Servises from "./servises/Servises";
 // english page imports
 import Home1 from './englishv/Home1'
 import Biblary from './components/Biblary';
@@ -47,6 +48,7 @@ function App() {
       <Route path='/Aboutus' element={<Aboutus />} />
       <Route path='/Login' element={<Login Link={Link} />} />
       <Route path='/Register' element={<Registration Link={Link} />} />
+      <Route path='/Service' element={<Servises />} />
       <Route path='/Proces' element={<Procces />} />
 
       {/* english version */}
