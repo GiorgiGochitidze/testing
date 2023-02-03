@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const ServiseContent = () => {
 
-    const [buywindow, setBuywindow] = useState(true)
+    const [buywindow, setBuywindow] = useState(false)
 
     const [blurback, setBlurback] = useState(false)
     const [blurback1, setBlurback1] = useState(false)
