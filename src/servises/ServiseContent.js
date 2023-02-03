@@ -34,7 +34,7 @@ const ServiseContent = () => {
             <div className="service-listed-items" onMouseEnter={() => setBlurback(true)} onMouseLeave={() => setBlurback(false)}>
 
                 {blurback && <div className="buy-button-services">
-                    <button className="buy-button-in-services">ყიდვა</button>
+                    <button onClick={() => buywindow ? setBuywindow(false) : setBuywindow(true)} className="buy-button-in-services">ყიდვა</button>
                 </div>}
 
                 <div style={{display: 'flex', textAlign: 'center', justifyContent: 'flex-end', gap: '10px', paddingBlock: '5px', paddingInline: '5px'}}>
