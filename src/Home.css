@@ -1673,13 +1673,13 @@ d
 
 .service-container{
     width: 100%;
-    height: 1000px;
+    height: auto;
     /* background-color: red; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     align-content: center;
-    margin-top: 50px;
+    margin-top: 150px;
     justify-items: center;
     align-items: center;
     border-radius: 10px;
@@ -1690,6 +1690,7 @@ d
     height: 300px;
     background-color: lightgray;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .service-button-register{
@@ -1708,6 +1709,51 @@ d
     background-color: rgb(128, 128, 128, 0.5);
     cursor: pointer;
     color: black;
+}
+
+.buy-button-services{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-button-in-services{
+    width: 200px;
+    height: 50px;
+    background: none;
+    border: 2px solid lawngreen;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.buy-button-in-services:hover{
+        cursor: pointer;
+        background: rgb(128, 128, 128, 0.5);
+}
+
+.buy-window-in-services{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin-top: -468px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-window-container{
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+    margin-bottom: 60px;
+    background: white;
 }
 
 @keyframes textcont {
