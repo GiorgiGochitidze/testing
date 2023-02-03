@@ -21,7 +21,14 @@ const ServiseContent = () => {
 
                     <h4 style={{marginLeft: '20px'}}>ფასი: 80ლარი</h4>
                     <h4 style={{marginLeft: '20px'}}>ხანგრძლივობა: 1სთ</h4>
+                    <button onClick={() => setBuywindow(false)} style={{marginLeft: '20px', width: '200px', height: '50px', background: 'none', border: '2px solid lawngreen', borderRadius: '20px', cursor: 'pointer'}}>გაუქმება</button>
                 </div>
+                {/* margin-left: 20px;
+    width: 200px;
+    height: 50px;
+    background: none;
+    border: 2px solid lawngreen;
+    border-radius: 20px; */}
             </div>}
             <div className="service-listed-items" style={{background: '#3dbea6'}}>
                 <div style={{display: 'flex', textAlign: 'center', justifyContent: 'center', gap: '20px'}}>
