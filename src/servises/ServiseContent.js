@@ -20,6 +20,7 @@ const ServiseContent = () => {
                     <h2 style={{textAlign: 'center'}}>პაკეტის დასახელება: კარიერული განვითარებისა და პროფესიული ორიენტაციის პროგრამა</h2>
 
                     <h4 style={{marginLeft: '20px'}}>ფასი: 80ლარი</h4>
+                    <h4 style={{marginLeft: '20px'}}>ხანგრძლივობა: 1სთ</h4>
                 </div>
             </div>}
             <div className="service-listed-items" style={{background: '#3dbea6'}}>
